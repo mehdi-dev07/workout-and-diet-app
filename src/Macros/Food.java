@@ -1,19 +1,19 @@
-package nutrition;
+package Macros;
 
 public class Food {
     private String name;
-    private Double weight;
+    private String barcode;
     private Nutriment nutriments;
     private TypeFood type;
 
-    public Food(String name, Nutriment nutriments, TypeFood type) {
+    public Food(String name, Nutriment nutriments, TypeFood type, String barcode) {
         this.type = type;
         this.name = name;
         this.nutriments = nutriments;
+        this.barcode = barcode;
     }
-    public Food(String name, Double weight, Nutriment nutriments, TypeFood type) {
+    public Food(String name, Nutriment nutriments, TypeFood type) {
         this.name = name;
-        this.weight = weight;
         this.nutriments = nutriments;
         this.type = type;
     }
@@ -21,12 +21,7 @@ public class Food {
     public String getName() {
         return name;
     }
-    public Double getWeight() {
-        return weight;
-    }
-    public void setWeight(Double weight) {
-        this.weight = weight;
-    }
+
 
     public Nutriment getNutriments() {
         return nutriments;

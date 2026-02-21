@@ -1,4 +1,4 @@
-package nutrition;
+package Macros;
 
 public enum Units {
         GRAM,          // g
